@@ -52,6 +52,7 @@ table {
 /* ----------------- Global ------------------ */
 
 body {
+    display: grid;
     margin: 0 auto;
     background-color: #121212;
     color: #FFFFFF;
@@ -73,24 +74,29 @@ h1 {
 
 /* ----- Navigation ----- */
 
+nav {
+    background-color: #FFFFFF;
+    height: 42px;
+    text-align: center;
+}
+
 nav ul {
     display: inline-flex;
-    position: sticky;
-    margin: 0 auto;
-    background-color: #232324;
+    width: auto;
+    background-color: yellow;
+    margin-left: 16px;
 }
 
 nav li {
-    margin: 0 auto;
+    padding: 8px 16px 8px 24px;
 }
 
 nav a {
     text-transform: uppercase;
-    margin: 0 auto;
+    color: blue;
 }
 
 [href="#top"] {
-
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -98,12 +104,28 @@ nav a {
 
 /* ------------------ Main ------------------- */
 
-/* -------------- Home -------------- */
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 
-/* ------------- About -------------- */
+/* -------- Top -------- */
 
-/* ----------- Portfolio ------------ */
+#top h2 {
+    text-align: center;
+    font-size: 32px;
+    padding: 128px 0px 32px 0px;
+}
 
-/* ------------ Contact ------------- */
+#top h3 {
+    text-align: center;
+    font-size: 24px;
+}
 
-/* ----------------- Footer ------------------ */
+/* ------- About ------- */
+
+/* ----- Portfolio ----- */
+
+/* ------- Contact ----- */
+
+/* ------- Footer ------ */
